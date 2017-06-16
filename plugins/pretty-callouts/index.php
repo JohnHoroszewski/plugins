@@ -8,6 +8,14 @@
  * License: GPLv2
  */
 
+function pretty_callout_stylsheet()
+{
+	wp_register_style( 'pretty_callouts_style', plugins_url( 'style/style.css', __FILE__ ) );
+	wp_enqueue_style( 'pretty_callouts_style' );
+}
+
+add_action( 'wp_enqueue_scripts', 'pretty_callout_stylsheet' );
+
 function pretty_callouts( $atts, $content = null )
 {
 
