@@ -43,3 +43,4 @@ function jp_shortcode_cta()
 }
 
 add_shortcode( 'CTA', 'jp_shortcode_cta' );
+
